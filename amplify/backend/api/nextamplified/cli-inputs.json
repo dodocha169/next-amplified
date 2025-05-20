@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "nextamplified",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authnextamplified22db4962"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": []
+  }
+}
