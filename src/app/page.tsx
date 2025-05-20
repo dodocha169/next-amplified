@@ -1,10 +1,17 @@
 'use client'
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useEffect } from "react";
 import { Authenticator } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
+import { Amplify } from "aws-amplify";
+import awsExports from '../aws-exports';
+
 
 export default function Home() {
+  useEffect(() => {
+    Amplify.configure(awsExports);
+  },[]);
   return (
     <div className={styles.page}>
       <main className={styles.main}>
